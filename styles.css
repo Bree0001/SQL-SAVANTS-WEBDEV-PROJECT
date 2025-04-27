@@ -1,3 +1,4 @@
+
 :root{
   --primary-color: #030405;
   --primary-font: "Poppins", sans-serif;
@@ -170,3 +171,183 @@ body{
     width: 80%;
   }
 }
+=======
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  /* Services Section */
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+  flex-wrap: wrap;
+}
+
+.services-left {
+  flex: 1;
+}
+
+.services-left h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 50px;
+  margin-bottom: 40px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Service header with icon and title in one line */
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.service-header img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.service-header h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #16a085;
+}
+
+.service p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Right side image */
+.services-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-right img {
+  width: 70%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 40px;
+    background-color: #ffffff; /* White background */
+    padding: 20px 0;
+  }
+  
+  .stats div {
+    text-align: center;
+  }
+  
+  .stats div h3 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .stats div p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Portfolio Section */
+.portfolio {
+    padding: 60px 10%;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  
+  /* Footer Icons */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: #004d40; /* Dark green background for footer too */
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .services-right img {
+      width: 90%;
+    }
+  
+    .stats {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
