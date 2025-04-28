@@ -542,12 +542,17 @@ body{
   .footer-icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
     padding: 20px 0;
     background-color: #004d40; /* Dark green background for footer too */
     color: #ffffff;
     font-weight: bold;
+  }
+
+  .footer-logo{
+    width: 80px;
+    border-radius: 40px;
   }
 
   @media (max-width: 768px) {
