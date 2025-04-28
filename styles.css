@@ -140,6 +140,10 @@ body {
    height: 100vh;
  }
 
+ .designer-section{
+  background-color: var(--grey-background);
+ }
+
  .section2{
    display: flex;
    flex-direction: row;
@@ -183,7 +187,7 @@ body {
    letter-spacing: 0.7px;
  }
 
- .empty-div {
+ .e-div {
    background-color: #f4edede5;
    width: 90%;
    height: 0.3px;
@@ -220,7 +224,7 @@ body {
    color: white;
    background-color: rgb(27, 193, 27);
  }
-=======
+
 :root{
   --primary-color: #030405;
   --primary-font: "Poppins", sans-serif;
@@ -399,7 +403,7 @@ body{
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -478,7 +482,7 @@ body{
   object-fit: cover;
 }
 
-  
+
   /* Stats Section */
   .stats {
     display: flex;
@@ -488,51 +492,51 @@ body{
     background-color: #ffffff; /* White background */
     padding: 20px 0;
   }
-  
+
   .stats div {
     text-align: center;
   }
-  
+
   .stats div h3 {
     font-size: 32px;
     margin-bottom: 5px;
     color: #2c3e50;
     font-weight: bold;
   }
-  
+
   .stats div p {
     font-size: 14px;
     color: #777;
   }
-  
+
   /* Portfolio Section */
 .portfolio {
     padding: 60px 10%;
     background: #fff;
     text-align: center;
   }
-  
+
   .portfolio h2 {
     font-size: 32px;
     margin-bottom: 40px;
     color: #2c3e50;
   }
-  
+
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 40px;
   }
-  
+
   .portfolio-grid img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
   }
-  
-  
+
+
   /* Footer Icons */
   .footer-icons {
     display: flex;
@@ -544,28 +548,28 @@ body{
     color: #ffffff;
     font-weight: bold;
   }
-  
+
   @media (max-width: 768px) {
     .services {
       flex-direction: column;
       align-items: center;
     }
-  
+
     .service-grid {
       grid-template-columns: 1fr;
       gap: 20px;
     }
-  
+
     .services-right img {
       width: 90%;
     }
-  
+
     .stats {
       flex-direction: column;
       gap: 20px;
       text-align: center;
     }
-  
+
     .portfolio-grid {
       grid-template-columns: 1fr;
     }
